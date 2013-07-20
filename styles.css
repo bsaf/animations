@@ -1,0 +1,58 @@
+/* Setup */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Fonts */
+body { font-family: 'Helvetica'; font-size: 13px; }
+
+/* Adding an item to a list */
+.block-list {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+}
+
+.block-list-item {
+  padding: 5px;
+  background-color: #CCC;
+  margin-bottom: 3px;
+  max-height: 50px;
+}
+
+.block-list-new-item {
+  max-height: 0;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -webkit-animation: growHeight 0.2s ease forwards;
+  -ms-transform: scale(0);
+  -ms-animation: growHeight 0.2s ease forwards;
+  -o-transform: scale(0);
+  -o-animation: growHeight 0.2s ease forwards;
+  transform: scale(0);
+  animation: growHeight 0.2s ease forwards;
+}
+@-webkit-keyframes growHeight {
+  to { 
+    max-height: 50px;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-o-keyframes growHeight {
+  to { 
+    max-height: 50px;
+    opacity: 1;
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes growHeight {
+  to { 
+    max-height: 50px;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
