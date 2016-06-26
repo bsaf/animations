@@ -3,3 +3,5 @@ $(document).ready(function(){
     $('<li class="block-list-item block-list-new-item">Item</li>').insertBefore('li:first-child');
   });
 });
+
+// test
